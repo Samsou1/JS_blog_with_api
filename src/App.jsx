@@ -1,6 +1,5 @@
-import { useState } from 'react'
 import './App.css'
-import Article from './pages/Articles'
+import Article from './pages/Article'
 import Home from './pages/Home'
 import {
   BrowserRouter,
@@ -13,7 +12,6 @@ function App() {
   return (
     <BrowserRouter>
       <main>
-        <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/articles/:article" element={<Article />} />
